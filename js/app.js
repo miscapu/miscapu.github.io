@@ -6,6 +6,30 @@
 */
 
 // STICKY
+//Start Update 18/4/2020
+var win = $(this);      // browser window
+var nav = $('.navbar'); // your navigation bar
+
+function switchNavbar() {
+    if (win.width() < 768) { // on mobile
+        nav.removeClass('fixed-top');
+        nav.addClass('fixed-bottom');
+    } else { // on desktop
+        nav.removeClass('fixed-bottom');
+        nav.addClass('fixed-top');
+    }
+}
+
+// On first load
+$(function() {
+    switchNavbar();
+});
+
+// When browser resized
+$(window).on('resize', function(){
+    switchNavbar();
+});
+//End Update 18/04/2020
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
