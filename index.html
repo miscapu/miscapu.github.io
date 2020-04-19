@@ -38,13 +38,38 @@
 
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+    <!--<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">-->
         <div class="container">
             <!-- LOGO -->
-            <a class="navbar-brand logo" href="index.html">
+            <a class="navbar-brand logo desktoppic" href="index.html">
                 <img src="images/logo-dark2.png" alt="" class="" height="60">
             </a>
-            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="text-center navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-clipboard-account"></i>
+                <ul class="navbar-nav navbar-center" id="mySidenav">
+                    <li class="nav-item text-muted text-center f-12">
+                        Fidelix Conta
+                    </li>
+                </ul>
+                
+            </button>
+
+            <button class="text-center navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-clipboard-text"></i>
+                <ul class="navbar-nav" id="mySidenav">
+                    <li class="nav-item text-muted text-center f-12">
+                        Como Funciona
+                    </li>
+                </ul>
+                
+            </button>
+            <button class="text-center navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
+                <ul class="navbar-nav" id="mySidenav">
+                    <li class="nav-item text-muted f-12">
+                        Mais
+                    </li>
+                </ul>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
@@ -87,10 +112,10 @@
     <section class="hero-3-bg position-relative overflow-hidden d-flex align-items-center bg-primary" id="home">
         <div class="hero-3-bg-overlay"></div>
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center contentTop">
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <h1 class="hero-3-title text-white mb-4 font-weight-normal line-height-1_4">TECNOLOGIA PARA MICROEMPRESARIOS</h1>
+                        <h1 class="hero-3-title text-white mb-4 font-weight-normal line-height-1_4 contentTitleTop">TECNOLOGIA PARA MICROEMPRESARIOS</h1>
                         <p class="text-white-50 mb-4">Quer melhorar a relação com seus clientes e vender mais? Nós podemos ajudar!</p>
                         <a href="" class="btn btn-warning">Conheça Nossos Produtos</a>
                     </div>
@@ -139,7 +164,7 @@
     <!--<section class="section bg-light" id="about">-->
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8">
+                <div class="col-lg-6 col-md-8 contentTop">
                     <div class="title text-center mb-5">
                         <h1 class="font-weight-medium text-dark">Quem <span class="text-warning">Somos</span></h1>
                         <p class="text-muted">Apaixonados pela tecnologia e ajudando a transformar a vida dos seus clientes!</p>
@@ -672,21 +697,12 @@
 
   
 <!--Call To Action Start-->
-    <section class="section bg-light" id="clients">
+    <section class="hero-3-bg position-relative overflow-hidden d-flex align-items-center bg-light" id="clients">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8">
-                    <div class="title text-center mb-5">
-                        <!--<h3 class="font-weight-normal text-dark"> <span class="text-warning">Ficou Com Alguma Dúvida?</span></h3>
-                        
-                        <p class="text-muted">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero pulvinar hendrerit id lorem.</p>
-                        <button type="submit" class="btn btn-warning">Quero!</button>-->
-                    </div>
-                </div>
-            </div>
-            <div class="row">
+            
+            <div class="row contentTop">
                 <div class="text-center col-lg-4 mt-5">
-                    <h3 class="font-weight-normal mt-3 line-height-1_4">    <span class="font-weight-medium text-warning">Ficou Com Alguma Dúvida? </span></h3>
+                    <h3 class="font-weight-normal line-height-1_4">    <span class="font-weight-medium text-warning">Ficou Com Alguma Dúvida? </span></h3>
                     <!--<div class="testi-border my-4"></div>-->
                     <button type="submit" class="btn btn-warning my-4">Contato</button>
                     <!--<p class="text-muted">Itaque earum rerum tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores alias consequatur.</p>-->
@@ -711,7 +727,7 @@
                                 </div>-->
                             </div>
                         </div>
-                        <!-- owl item and -->
+                        <!-- owl item start -->
                         <div class="item">
                             <div class="testi-content m-3 position-relative">
                                 <div class="testi-box p-4">
@@ -1206,16 +1222,124 @@ Veja como funciona:</p>
     <section class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <!--<div class="col-lg-4">
                     <div class="mb-4">
                         <a href="index.html"><img src="images/logo-dark2.png" alt="" class="logo-dark" height="40" /></a>
                         <p class="text-muted mt-4 mb-2">Contato@fidelix.com.br</p>
                         <h6 class="text-muted font-weight-normal">+55 (61) 8118-5815</h6>
-                    </div>
-                </div>
-                <div class="col-lg-8">
+                        <ul class="list-unstyled footer-social-list mt-4">
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
+                            </ul>
+                            <!--Termos de Uso Button Start-->
+                            <!--<div class="container">
+                              <!-- Button to Open the Modal -->
+                              <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Termos de Uso
+                              </button>
+
+                              <!-- The Modal -->
+                              <!--<div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                  
+                                    <!-- Modal Header -->
+                                    <!--<div class="modal-header">
+                                      <h4 class="modal-title">Termos de Uso</h4>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <!--<div class="modal-body">
+                                      Terms of Use Vs. Terms and Conditions
+
+                                        Legally speaking, a Terms of Use agreement is the same thing as a Terms and Conditions agreement.
+
+                                        We're using the phrase "Terms of Use" to describe a general agreement between you and your users. Different companies use different names for this type of agreement, including:
+
+                                            Terms and Conditions
+                                            Terms of Service
+                                            User Agreement
+                                            Acceptable Use Policy
+
+                                        These documents usually serve the same purpose but can be used in different contexts.
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <!--<div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Termos de Uso Button End-->
+                    <!--</div>
+                </div>-->
+                <!--<div class="col-lg-8">
                     <div class="row">
-                        <div class="col-md-4">
+
+                        <div class="mb-4">
+                        <a href="index.html"><img src="images/logo-dark2.png" alt="" class="logo-dark" height="40" /></a>
+                        <p class="text-muted mt-4 mb-2">Contato@fidelix.com.br</p>
+                        <h6 class="text-muted font-weight-normal">+55 (61) 8118-5815</h6>
+                        <ul class="list-unstyled footer-social-list mt-4">
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
+                            </ul>
+                            <!--Termos de Uso Button Start-->
+                            <!--<div class="container">
+                              <!-- Button to Open the Modal -->
+                              <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Termos de Uso
+                              </button>
+
+                              <!-- The Modal -->
+                              <!--<div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                  
+                                    <!-- Modal Header -->
+                                    <!--<div class="modal-header">
+                                      <h4 class="modal-title">Termos de Uso</h4>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <!--<div class="modal-body">
+                                      Terms of Use Vs. Terms and Conditions
+
+                                        Legally speaking, a Terms of Use agreement is the same thing as a Terms and Conditions agreement.
+
+                                        We're using the phrase "Terms of Use" to describe a general agreement between you and your users. Different companies use different names for this type of agreement, including:
+
+                                            Terms and Conditions
+                                            Terms of Service
+                                            User Agreement
+                                            Acceptable Use Policy
+
+                                        These documents usually serve the same purpose but can be used in different contexts.
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <!--<div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Termos de Uso Button End-->
+                    <!--</div>
+
+
+                        <!--<div class="col-md-4">
                             <h6 class="footer-list-title text-dark mb-3">Services</h6>
                             <ul class="list-unstyled company-sub-menu">
                                 <li><a href="">Digital Marketing</a></li>
@@ -1243,14 +1367,81 @@ Veja como funciona:</p>
                                 <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
+
+            
+            
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="text-center text-muted">
-                        <p class="mb-0 f-15">2020 © Deoxa. Design by Themesdesign</p>
+                        <div class="mb-4">
+                        <a href="index.html"><img src="images/logo-dark2.png" alt="" class="logo-dark" height="40" /></a>
+                        <p class="text-muted mt-4 mb-2">Contato@fidelix.com.br</p>
+                        <h6 class="text-muted font-weight-normal">+55 (61) 8118-5815</h6>
+                        <ul class="list-unstyled footer-social-list mt-4">
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
+                            </ul>
+                            
+                            <!--Termos de Uso Button Start-->
+                            <div class="container">
+                              <!-- Button to Open the Modal -->
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Termos de Uso
+                              </button>
+
+                              <!-- The Modal -->
+                              <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                  
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Termos de Uso</h4>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                      Terms of Use Vs. Terms and Conditions
+
+                                        Legally speaking, a Terms of Use agreement is the same thing as a Terms and Conditions agreement.
+
+                                        We're using the phrase "Terms of Use" to describe a general agreement between you and your users. Different companies use different names for this type of agreement, including:
+
+                                            Terms and Conditions
+                                            Terms of Service
+                                            User Agreement
+                                            Acceptable Use Policy
+
+                                        These documents usually serve the same purpose but can be used in different contexts.
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Termos de Uso Button End-->
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="text-center text-muted">
+                        <p class="mb-0 f-15">2020 © MiSCapu. Design by MiSCapu</p>
                     </div>
                 </div>
             </div>
